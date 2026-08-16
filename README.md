@@ -117,3 +117,13 @@ The final processed video is available at:
 `output/traffic_management_result_h264.mp4`
 
 The output demonstrates YOLO-based vehicle detection, vehicle counting, and traffic-density estimation.
+
+## Download YOLO11 Model
+
+The model file is not included in this repository.
+
+Download it automatically:
+
+```python
+from ultralytics import YOLO
+model = YOLO("yolo11n.pt")
