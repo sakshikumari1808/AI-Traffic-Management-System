@@ -190,3 +190,19 @@ https://github.com/sakshikumari1808/AI-Traffic-Management-System
 """)
 
 st.success("IBM Internship Project Submission Ready ✅")
+
+import tempfile
+
+uploaded_file = st.file_uploader("Upload a traffic video", type=["mp4"])
+
+if uploaded_file is not None:
+
+    temp_input = tempfile.NamedTemporaryFile(delete=False, suffix=".mp4")
+
+    temp_input.write(uploaded_file.read())
+
+    input_path = temp_input.name
+
+process_video(input_path, output_path)
+
+st.video(output_path)
