@@ -223,7 +223,9 @@ print("PROCESSING COMPLETED")
 print("==========================================")
 print("Output:", OUTPUT_VIDEO)
 
-
+def process_video(input_video, output_video):
+    # all your YOLO code
+    return output_video
 
 
 
