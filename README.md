@@ -127,3 +127,7 @@ Download it automatically:
 ```python
 from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
+
+## Resources
+
+- YOLO11 Model: [https://drive.google.com/file/d/1wcihyPHsyenmoaYFoznoniF190QCKco-/view?usp=drive_link]
